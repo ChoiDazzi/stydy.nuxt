@@ -3,10 +3,10 @@
         <v-sheet elevation="1">
             <v-row>
                 <v-col cols="12" md="5">
-                    <v-text-field v-model="srchData.type" :loading="loading" label="타입" density="compact" variant="outlined"></v-text-field>
+                    <v-text-field v-model="srchData.type" label="타입" density="compact" variant="outlined"></v-text-field>
                 </v-col>
                 <v-col cols="12" md="5">
-                    <v-text-field v-model="srchData.keyword" :loading="loading" label="검색내용" density="compact" variant="outlined"></v-text-field>
+                    <v-text-field v-model="srchData.keyword" label="검색내용" density="compact" variant="outlined"></v-text-field>
                 </v-col>
                 <v-col cols="12" md="5">
                     <v-btn class="mt-2 mr-2" color="primary" @click="search">검색</v-btn>
