@@ -38,7 +38,7 @@
         <v-row class="my-0">
           <v-layout v-if="files.length != 0" row wrap>
             <v-flex v-for="file in files" :key="file.fileId" xs4>
-              <span class="mr-1">{{ file.fileOrgNm }}</span>
+              <a :href="`/api/v1/posts/${file.fileId}/download`" download>{{ file.fileOrgNm }}</a>
               <br/>
               <img
                 :src="`/api/v1/files/${file.fileId}`"
