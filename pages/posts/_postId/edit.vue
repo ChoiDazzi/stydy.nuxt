@@ -58,9 +58,9 @@
 </template>
 <script>
 export default {
-  props: ["postId"],
   data() {
     return {
+      postId: this.$route.params.postId,
       post: {},
       fileInfo: [],
       files: [],

@@ -87,9 +87,9 @@
 
 <script>
 export default {
-  props: ['postId'],
   data() {
     return {
+      postId: this.$route.params.postId,
       post: {},
       files: [],
     };
